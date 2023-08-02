@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Kumbh+Sans:wght@300&family=Manrope:wght@300;400&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans&family=Playfair+Display&family=Poppins&family=Raleway&family=Roboto+Slab:wght@500&family=Roboto:wght@400;700&family=Ubuntu&display=swap");
+    </style>
+    <link rel="stylesheet" href="stylesheet/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="container_1">
+        <img src="images/bg-sidebar-desktop.svg" />
+        <div class="steps_container">
+          <div class="steps">
+            <h2>1</h2>
+            <p>Your Info</p>
+          </div>
+          <div class="steps">
+            <h2>2</h2>
+            <p>Select Plan</p>
+          </div>
+          <div class="steps">
+            <h2>3</h2>
+            <p>Add-Ons</p>
+          </div>
+          <div class="steps">
+            <h2>4</h2>
+            <p>Summary</p>
+          </div>
+        </div>
+      </div>
+      <div id="step1_container_2">
+        <h1>Personal Info</h1>
+        <p>Please provide your name, email address and phone number</p>
+        <br />
+        <div id="info_container">
+          <label for="" class="info_labels">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="e.g Stephen King"
+          />
+          <p class="empty_field" style="color: red; font-weight: bold">
+            Empty Field
+          </p>
+          <label for="" class="info_labels">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            required
+            placeholder="e.g stephenking@lorem.com"
+          />
+          <p class="empty_field" style="color: red; font-weight: bold">
+            Empty Field
+          </p>
+          <label for="" class="info_labels">Phone Number</label>
+          <input
+            type="tel"
+            id="phone_number"
+            name="phone_number"
+            required
+            placeholder="e.g +1 234 567 890"
+          />
+          <p class="empty_field" style="color: red; font-weight: bold">
+            Empty Field
+          </p>
+          <button id="next_btn_1">Next Step</button>
+        </div>
+      </div>
+      <div id="step2_container_2">
+        <h1>Select your Plan</h1>
+        <br />
+        <div id="plans_container">
+          <div class="plans">
+            <img src="images/icon-arcade.svg" />
+            <h2>Arcade</h2>
+            <p>$9/mo</p>
+          </div>
+          <div class="plans">
+            <img src="images/icon-advanced.svg" />
+            <h2>Advanced</h2>
+            <p>$12/mo</p>
+          </div>
+          <div class="plans">
+            <img src="images/icon-pro.svg" />
+            <h2>Pro</h2>
+            <p>$15/mo</p>
+          </div>
+        </div>
+        <div class="btn_section">
+          <button id="back_btn_1">Go Back</button>
+          <button id="next_btn_2">Next Step</button>
+        </div>
+      </div>
+
+      <div id="step3_container_2">
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience</p>
+        <br />
+        <div id="add_ons_container">
+          <div class="add_ons">
+            <h2>Access to multiplayer games</h2>
+
+            <p>+$1/mo</p>
+          </div>
+          <div class="add_ons">
+            <h2>Extra 1TB of cloud save</h2>
+            <p>+$2/mo</p>
+          </div>
+          <div class="add_ons">
+            <h2>Customizable Profile</h2>
+
+            <p>+$2/mo</p>
+          </div>
+        </div>
+        <div class="btn_section">
+          <button id="back_btn_2">Go Back</button>
+          <button id="next_btn_3">Next Step</button>
+        </div>
+      </div>
+
+      <div id="step4_container_2">
+        <h1>Finishing Up</h1>
+        <p>Double-check everything looks OK before confirming</p>
+        <br/>
+        <br>
+        <div id="summary_section">
+            <div id="plan_section">
+              <h2></h2>
+              <p></p>
+            </div>
+            <div id="add_ons_section">
+              
+            </div>
+        </div>
+        <div id="total_section">
+          <h2>Total</h2>
+          <h2></h2>
+        </div>
+        
+        <div class="btn_section">
+          <button id="back_btn_3">Go Back</button>
+          <button id="confirm_btn">Confirm</button>
+        </div>
+      </div>
+
+      <div id="step5_container_2">
+        <img src="images/icon-thank-you.svg">
+        <h1>Thank you!</h1>
+        
+      </div>
+    </div>
+
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

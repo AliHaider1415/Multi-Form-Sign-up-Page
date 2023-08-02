@@ -1,0 +1,295 @@
+body{
+    background-color:rgb(225, 237, 249);
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    display: none;
+    background-color: white;
+    height: 600px;
+    width: 60%;
+    margin-top: 7%;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between;
+}
+#container_1{
+    position: relative;
+    height: 94%;
+    width: 30%;
+    margin: 1.1% 0 0 1%;
+}
+#container_1 img{
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 10px;
+}
+.steps_container{
+    position:absolute;
+    height: 50%;
+    width: 73%;
+    top: 9%;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
+}
+.steps{
+    display: inline-block;
+    height: 20%;
+}
+.steps h2, .steps p{
+    font-weight: bold;
+    color: white;
+    display: inline;
+}
+.steps h2{
+    padding: 3% 6%;
+    border: 2px solid rgb(112, 176, 244);
+    border-radius: 50%;
+}
+.steps p{
+    margin-left: 10%;
+    font-size: 1.1vw;
+}
+#step1_container_2{
+    margin-right: 18%;
+    height: 94%;
+}
+#step1_container_2 h1{
+    margin-top: 15%;
+    font-size: 2vw;
+    color: rgb(21, 21, 111);
+}
+#step1_container_2 p{
+    margin-top: -3%;
+    margin-left: 0;
+    color: rgb(173, 169, 169);
+    font-size: 0.9vw;
+}
+#info_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#info_container label{
+    font-weight: bold;
+    font-size: 1vw;
+    color: rgb(13, 13, 101);
+}
+#info_container p{
+    display: none;
+}
+#info_container input{
+    outline: none;
+    height: 7%;
+    margin: 4% 0 4% 0;
+    border: 2px solid rgb(205, 196, 196);
+    border-radius: 7px;
+    font-size: 0.9vw;
+    padding-left: 5%;
+}
+#info_container input::placeholder{
+    padding-left: 5%;
+}
+#info_container button{
+    outline: none;
+    border: none;
+    height: 7%;
+    width: 25%;
+    color: white;
+    background-color: rgb(20, 20, 126);
+    border-radius: 7px;
+    font-size: 0.75vw;
+    align-self: flex-end;
+    margin-top: 10%;
+    font-family: 'Ubuntu', sans-serif;
+}
+#info_container button:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#step2_container_2{
+    display: none;
+    height: 94%;
+    width: 50%;
+    margin-right: 7%;
+}
+#step2_container_2 h1{
+    margin-top: 10%;
+    font-size: 2vw;
+    color: rgb(21, 21, 111);
+}
+#step2_container_2 p{
+    margin-top: -3%;
+    color: rgb(173, 169, 169);
+    font-size: 0.9vw;
+}
+#plans_container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    column-gap: 2%;
+}
+.plans{
+    border: 2px solid rgb(173, 169, 169);
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+}
+.plans img{
+    margin: 20% 0 10% 0;
+}
+.plans img, p, h2{
+    margin-left: 10%;
+}
+.plans, .add_ons:hover{
+    cursor: pointer;
+    border: 2px solid rgb(30, 30, 137);
+}
+.plans.selected, .add_ons.selected{
+    transition: 0.3s;
+    border: 2px solid rgb(76, 76, 206);
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px blue;
+}
+.btn_section{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+#next_btn_2, #next_btn_3, #confirm_btn{
+    outline: none;
+    border: none;
+    height: 80%;
+    width: 25%;
+    color: white;
+    background-color: rgb(20, 20, 126);
+    border-radius: 7px;
+    font-size: 0.75vw;
+    align-self: flex-end;
+    margin-top: 10%;
+    font-family: 'Ubuntu', sans-serif;
+}
+#next_btn_2, #next_btn_3:hover, #confirm_btn:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#back_btn_1, #back_btn_2, #back_btn_3{
+    font-weight: bold;
+    height: 60%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9vw;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+#back_btn_1, #back_btn_2:hover, #back_btn_3:hover{
+    color: rgb(29, 29, 151);
+    cursor: pointer;
+}
+
+#step3_container_2, #step4_container_2{
+    display: none;
+    height: 94%;
+    width: 50%;
+    margin-right: 7%;
+}
+#step4_container_2{
+    display: none;
+}
+#step3_container_2 h1, #step4_container_2 h1{
+    margin-top: 10%;
+    font-size: 2vw;
+    color: rgb(21, 21, 111);
+}
+#step3_container_2 p, #step4_container_2 p{
+    margin-left: 0;
+    margin-top: -3%;
+    color: rgb(173, 169, 169);
+    font-size: 0.9vw;
+}
+#add_ons_container{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7%;
+}
+.add_ons{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 20%;
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+.add_ons p{
+    font-weight: bold;
+    margin: 0 5% -2% 0;
+}
+
+.steps:nth-child(1) h2{
+    background-color: rgb(112, 176, 244);
+}
+
+#summary_section{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    margin-bottom: 4%;
+}
+
+#plan_section {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    width: 100%;
+  }
+#plan_section p{
+    margin: 3% 5% 0 0 ;
+    font-weight: bolder;
+    color: rgb(21, 21, 111);
+}
+#add_ons_section {
+    margin-top: 7% ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8%;
+    height: 70%;
+  }
+.my_add_on{
+    display: flex;
+    justify-content: space-around;
+    height: 25%;
+}
+.my_add_on p{
+    font-weight: bolder;
+}
+
+#total_section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+#step5_container_2{
+    display: none;
+   height: 50%;
+   margin: 15% 23% 0  0;
+}
+#step5_container_2 h1{
+    font-size: 2vw;
+    color: rgb(16, 16, 95);
+}
+#step5_container_2 p{
+    font-size: 1vw;
+    color: gray;
+}
